@@ -1,4 +1,4 @@
-use csv_reader::*;
+use csv_parser::*;
 
 #[test]
 fn parse_csv() {

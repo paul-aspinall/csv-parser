@@ -1,4 +1,4 @@
-A CSV Reader (UTF-8 & ASCII only) library for Rust.
+A CSV Parser/Reader (UTF-8 & ASCII only) library for Rust.
 
 Three functions are exposed:
 

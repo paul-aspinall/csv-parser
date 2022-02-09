@@ -1,5 +1,5 @@
 [package]
-name = "csv-reader"
+name = "csv-parser"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,8 +7,8 @@ license = "MIT"
 keywords = ["csv","comma","parser","delimited","separated"]
 authors = ["Paul Aspinall <paspinall@suitsmecard.com>"]
 description = "CSV reader/parser, allowing for commas and new lines in quoted text"
-homepage = "https://github.com/paul-aspinall/csv-reader"
-repository = "https://github.com/paul-aspinall/csv-reader"
+homepage = "https://github.com/paul-aspinall/csv-parser"
+repository = "https://github.com/paul-aspinall/csv-parser"
 readme = "README.md"
 
 
