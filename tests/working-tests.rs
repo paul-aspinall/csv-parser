@@ -55,3 +55,12 @@ fn file_test1_to_rc() {
 
     assert_eq!(rc[0][0], "Agency".to_string());
 }
+
+#[test]
+fn file_test1_to_lines() {
+    let read_csv = read(PathBuf::from("tests/test1.csv")).unwrap();
+    let rc = parse(read_csv).unwrap();
+    let lines = to_lines(rc);
+
+    assert_eq!(lines[0][0..8].to_string(), "| Agency".to_string());
+}

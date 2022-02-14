@@ -161,7 +161,7 @@ pub fn to_lines(row_cols: Vec<Vec<String>>) -> Vec<String> {
         }
 
         for i in 0..max_col_size.len() {
-            if max_col_size[i] < row[i].len() {
+            if i < row.len() && max_col_size[i] < row[i].len() {
                 max_col_size[i] = row[i].len();
             }
         }
