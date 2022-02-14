@@ -1,3 +1,5 @@
+use std::path::PathBuf;
+
 use csv_parser::*;
 
 #[test]
@@ -38,4 +40,18 @@ fn row_cols_to_lines() {
     //        println!("{:?}", result);
 
     assert_eq!(conversion, result);
+}
+
+#[test]
+fn read_file_test1() {
+    let read_csv = read(PathBuf::from("tests/test1.csv")).unwrap();
+    assert_eq!(read_csv[0], 65) // first letter in the file is "A"
+}
+
+#[test]
+fn file_test1_to_rc() {
+    let read_csv = read(PathBuf::from("tests/test1.csv")).unwrap();
+    let rc = parse(read_csv).unwrap();
+
+    assert_eq!(rc[0][0], "Agency".to_string());
 }
